@@ -1,0 +1,13 @@
+@use "sass:math";
+
+$columnSpace: 1.25rem !default;
+$columnSingleSpace: math.div($columnSpace, 2) !default;
+$smallSpace: math.div(.5rem, 2) !default;
+$lineSpace: .125rem !default;
+$columnMobileSpace: $columnSingleSpace !default;
+$columnMobileSingleSpace: math.div($columnMobileSpace, 2) !default;
+
+$bodyBg: #dae0e6;
+
+$pageMaxWidth: 1920px;
+$pageHeaderHeight: 3.125rem;

@@ -1,0 +1,19 @@
+.alert {
+    padding: $columnSingleSpace;
+    margin: $smallSpace 0;
+    text-align: center;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &.ok {
+        background-color: #e8fdef;
+        color: #279e19;
+    }
+
+    &.error {
+        background-color: #fdd;
+        color: #d91a1d;
+    }
+}

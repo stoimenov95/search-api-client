@@ -1,0 +1,86 @@
+.reddit-post {
+	width: 100%;
+	max-width: 600px;
+	margin: 10px auto;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #ffffff;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: $columnSpace;
+	overflow:auto;
+
+	&:hover {
+		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	.post-image {
+		width: 125px;
+		height: 125px;
+		object-fit: cover;
+		border-radius: 4px;
+	}
+
+	.post-content {
+		padding: $lineSpace;
+		flex: 1;
+		overflow: hidden;
+
+		.post-title {
+			font-size: 1rem;
+			font-weight: bold;
+			margin-bottom: 5px;
+			color: #222;
+			overflow: hidden;
+		}
+
+		.post-metadata {
+			font-size: 0.8rem;
+			color: #888;
+			display: flex;
+			flex-wrap: wrap;
+			overflow-wrap: break-word;
+
+			.post-author {
+				margin-right: 5px;
+			}
+		}
+
+		.post-selftext {
+			font-size: 0.9rem;
+			color: #333;
+			margin: 10px 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: normal;
+		}
+
+		.read-more {
+			font-size: 0.8rem;
+			color: #0079d3;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.reddit-post {
+		width: 100%;
+		flex-direction: column;
+		padding: $columnMobileSingleSpace;
+
+		.post-content {
+			align-self: flex-start;
+		}
+
+		.post-image {
+			align-self: flex-start;
+		}
+	}
+}
