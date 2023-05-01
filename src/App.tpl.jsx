@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import DynamicImport from "./util/DynamicImport";
 import LayoutContainer from "./controller/layout/container";
 

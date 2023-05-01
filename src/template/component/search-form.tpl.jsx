@@ -10,7 +10,7 @@ export default class SearchFormTemplate extends React.Component {
 				<form className={"search-form"} onSubmit={handleSubmit}>
 					<div className={"search-wrapper"}>
 						<input type={"text"} className={"search-input"} placeholder={"Enter a keyword..."} value={searchKeyword} onChange={handleChange} />
-						<button type={"button"} className={"search-clear-button"} onClick={handleClearSearch}>X</button>
+						{searchKeyword && <button type={"button"} className={"search-clear-button"} onClick={handleClearSearch}>X</button>}
 						<button type={"submit"} className={"search-button"}>
 							<span>Search</span>
 						</button >

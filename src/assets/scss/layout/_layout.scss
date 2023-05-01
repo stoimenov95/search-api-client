@@ -32,9 +32,26 @@ img {
 	width: 100%;
 	height: 100%;
 	z-index: -1;
-	background: url("../img/background.jpeg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-  }
+}
+
+.backgroundWrap:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.9;
+	    background: url("../img/background.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+        background-attachment:fixed;
+
+        @media (max-width: 650px) {
+            // background-position: 70% 10%;
+
+        }
+}
 
