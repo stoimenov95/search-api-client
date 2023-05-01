@@ -26,7 +26,6 @@ export default class HomepageComponent extends React.Component {
 		searchAction.search(searchKeyword).then((data) => {
 			if (data && data.length > 0) {
 				this.setState({ posts: data, showLoadingAnimation: false });
-				console.log("DATA: ", data);
 			} else {
 				this.setState({ posts: [], showLoadingAnimation: false, noResultsFound: true });
 			}

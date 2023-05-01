@@ -5,7 +5,6 @@ import { apiAction } from "./apiAction";
 export let searchAction = {};
 
 searchAction.search = (keyword) => {
-    console.log(API.API_URL);
 	return fetch(`${API.API_URL}/search?searchParam=${keyword}`, {
         credentials: 'same-origin',
         headers: {
