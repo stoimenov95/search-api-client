@@ -7,3 +7,7 @@ For setting up this project you will need `node v16.17.0` or greater.
 3. To create a production build and serve it statically from the server, you can run `npm run build` and copy the `./dist` content into the server's `public` folder.
 4. Please note that when building a production build for the frontend, the `VITE_API_URL` will point to production, 
 for using the local server please update `VITE_API_URL` to your local server address (probably `localhost:4000/api`) before creating the build.
+
+Live:
+1. http://38.242.142.133:5001/ (deployed with Docker on VPS server)
+2. stoimenov.dev (deployed with Render.com)
